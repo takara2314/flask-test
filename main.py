@@ -11,6 +11,4 @@ def rootFunc():
         return "POSTされました！"
 
 if __name__ == "__main__":
-	app.run(host=os.getenv("HOST"),
-			port=os.getenv("PORT"),
-			debug=False)
+	app.run(host='0.0.0.0', port=os.getenv("PORT"))
